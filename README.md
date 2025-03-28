@@ -30,3 +30,23 @@
 - 상품 분류의 경우 상품은 도서, 음반, 영화로 구분되는데 상품이라는 공통 속성을 사용하므로 상속 구조로 표현
 
 ![image](https://github.com/user-attachments/assets/985c9efd-208e-461d-b152-2c9878ad4e65)
+
+#. 애플리케이션 아키텍쳐
+![img.png](img.png)
+
+계층형 구조 사용
+- controller, web: 웹 계층
+- service: 비즈니스 로직, 트랜잭션 처리
+- repository: JPA를 직접 사용하는 계층, 엔티티 매니저 사용
+- domain: 엔티티가 모여 있는 계층, 모든 계층에서 사용
+
+패키지 구조
+- jpabook.jpashop
+- domain
+- exception
+- repository
+- service
+- web
+
+개발 순서: 서비스, 리포지토리 계층을 개발하고, 테스트 케이스를 작성해서 검증, 마지막에 웹 계층 적용
+
