@@ -50,9 +50,6 @@ public class MemberServiceTest {
         } catch(IllegalStateException e) {
             return;
         }
-
-
-
         
         //then
         fail("예외가 발생해야 한다.");
