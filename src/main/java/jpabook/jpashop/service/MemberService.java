@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
-@RequiredArgsConstructor //final있는 필드만 가지고 생성자를 만들어준다.
+@RequiredArgsConstructor
 public class MemberService {
 
     /*
@@ -36,6 +36,7 @@ public class MemberService {
     3.
     생성자 injection을 사용 권장
      */
+
     private final MemberRepository memberRepository;
 
     /**
